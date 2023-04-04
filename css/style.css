@@ -1,0 +1,66 @@
+/* reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* variables */
+  :root{
+    --breakio-color: linear-gradient(0deg, #0F172A, #0F172A),
+    linear-gradient(0deg, #86198F, #86198F);
+    --fuchsia: #86198F;
+    --blueGray: #0F172A;
+    --breakio-font-weight: 700;
+    --breakio-font-size: 32px;
+    --breakio-line-height: 35.2px; /* or 110% */
+
+    
+    --body-copy-font-family: 'Roboto'; /* link texts, h, p, (everything text)   */
+    --body-copy-font-style: normal;
+    --body-copy-text-align: center;
+
+
+    --call-to-action-font-weight: 500;
+    --call-to-action-font-size: 16px;
+    --call-to-actio-line-height: 24px;
+    --call-to-actio-letter-spacing: 0.5px;
+    --call-to-action-text-color: #0F172A;
+    --call-to-action-btn-text: #FFFFFF;
+    --call-to-action-btn-background: #C026D3;
+    
+    --headings: linear-gradient(90deg, #C026D3 0%, #701A75 100%);
+    --headings-font-weight: 800;
+    --headings-line-height: 110%;
+    --heading1-font-size: 72px;
+    --heading2-font-size: 56px;
+    --heading5-font-weight: 700;
+    --heading5-font-size: 32px;
+    --heading5-color: #0F172A;
+
+    --paragraphsColor: #475569;
+    --paragraphsColor2: #0F172A;
+    --paragrapsFontWeight: 400;
+    --paragrapsFontWeight2: 500;
+
+
+    --paragraps-line-height1: 160%;
+    --paragraps-line-height2: 180%;
+    --paragraps-line-height3: 140%;
+
+    --paragraphsFontSize1: 20px;
+    --paragraphsFontSize2: 24px;
+    --paragraphsFontSize3: 18px;
+    --paragraphsFontSize4: 16px;
+    --paragraphsFontSize5: 14px;
+
+    --inputField-font-weight: 400;
+    --inputField-color: #475569;
+    --inputField-font-size: 24px;
+    --inputField-line-height: 160%;
+    
+    --body-copy-
+
+    --paragraph-font-size: 20px;
+    --paragraph-line-height: 36px;
+    /* (form)font-size: 24px; */
+  }
