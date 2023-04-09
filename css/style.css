@@ -1,10 +1,16 @@
 /* reset styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   }
-  /* variables */
+
+/* variables */
   :root{
     --breakio-color: linear-gradient(0deg, #0F172A, #0F172A),
     linear-gradient(0deg, #86198F, #86198F);
@@ -14,11 +20,10 @@
     --breakio-font-size: 32px;
     --breakio-line-height: 35.2px; /* or 110% */
 
-    
-    --body-copy-font-family: 'Roboto'; /* link texts, h, p, (everything text)   */
+    --body-copy-font-family: 'Roboto', sans-serif; 
+    /* link texts, h, p, (everything text)   */
     --body-copy-font-style: normal;
     --body-copy-text-align: center;
-
 
     --call-to-action-font-weight: 500;
     --call-to-action-font-size: 16px;
@@ -27,6 +32,9 @@
     --call-to-action-text-color: #0F172A;
     --call-to-action-btn-text: #FFFFFF;
     --call-to-action-btn-background: #C026D3;
+    --call-to-action-btn-border-radius:  18px;
+    --call-to-action-btn-border: 2px solid  #C026D3;
+    
     
     --headings: linear-gradient(90deg, #C026D3 0%, #701A75 100%);
     --headings-font-weight: 800;
@@ -41,12 +49,9 @@
     --paragraphsColor2: #0F172A;
     --paragrapsFontWeight: 400;
     --paragrapsFontWeight2: 500;
-
-
     --paragraps-line-height1: 160%;
     --paragraps-line-height2: 180%;
     --paragraps-line-height3: 140%;
-
     --paragraphsFontSize1: 20px;
     --paragraphsFontSize2: 24px;
     --paragraphsFontSize3: 18px;
@@ -57,10 +62,85 @@
     --inputField-color: #475569;
     --inputField-font-size: 24px;
     --inputField-line-height: 160%;
-    
-    --body-copy-
 
-    --paragraph-font-size: 20px;
-    --paragraph-line-height: 36px;
-    /* (form)font-size: 24px; */
   }
+  /* top-nav */
+  .top-nav{
+    display: flex;
+    justify-content: space-between; 
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  /* logo  */
+.home {
+  padding-top: 19.5px;
+  text-decoration: none;
+  font-size: var(--breakio-font-size);
+  font-family: var(--body-copy-font-family);
+  font-weight: var(--breakio-font-weight);
+  line-height: var(--breakio-line-height);
+  font-style: normal;
+  /* color: linear-gradient(0deg, #0F172A, #0F172A),
+  linear-gradient(0deg, #86198F, #86198F);
+   */
+}
+
+.home :hover{
+  /* I need a different color on hover */
+  text-decoration: underline;
+}
+.gray{
+  color: var(--blueGray);
+}
+.fuchsia{
+  color: var(--fuchsia);
+}
+
+/* navigation links */
+.links{
+  padding-top: 29px;
+}
+.links a{
+  text-decoration: none;
+  font-size: var(--call-to-action-font-size);
+  font-family: var(--body-copy-font-family);
+  font-weight: var(--call-to-action-font-weight);
+  font-style: normal;
+  line-height: var(--call-to-actio-line-height);
+  letter-spacing: var(--call-to-actio-letter-spacing);
+  color: var(--blueGray);
+  padding-left: 14px;
+  padding-right: 14px;
+}
+.links :hover{
+  /* I need a different color on hover. */
+  text-decoration: underline;
+}
+.links li{
+  display: inline;
+}
+.links .nav-btn {
+  background-color: var(--call-to-action-btn-background);
+color: var(--call-to-action-btn-text);
+border-radius: var(--call-to-action-btn-border-radius);
+/* padding: var(--call-to-action-btn-padding); */
+padding-left: 23px;
+padding-right: 23px;
+padding-top: 8px;
+padding-bottom: 8px;
+}
+
+/* .links li{
+  justify-content: right;
+} */
+/* .links a:link{
+  color:#0F172A;
+} */
+
+  img {
+    max-width: 100%;
+  } 
+  /* Header */
+  /* nav bar*/
+
+  
