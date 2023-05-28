@@ -1,146 +1,258 @@
-/* reset styles */
+/* 
+===============
+variables
+===============
+ */
+
+:root {
+  --breakio-color: linear-gradient(0deg, #0f172a, #0f172a),
+    linear-gradient(0deg, #86198f, #86198f);
+  --fuchsia: #86198f;
+  --fuchsia-light: #c026d3;
+  --blueGray: #0f172a;
+  --blueGray-light: #475569;
+  --headings: linear-gradient(90deg, #c026d3 0%, #701a75 100%);
+  --clr-white: #ffffff;
+  --ff-primary: "Roboto", sans-serif;
+  /* font-weights */
+  --seven-hundred: 700;
+  --five-hundred: 500;
+  --four-hundred: 400;
+  --breakio-font-size: 2rem;
+  --breakio-line-height: 2.2rem;
+  --call-to-action-btn-border-radius: 1.125rem;
+  --call-to-action-font-size: 1rem;
+  --call-to-action-line-height: 1.5rem;
+  --call-to-action-letter-spacing: 0.03125rem;
+  --call-to-action-btn-border: 0.125rem solid #c026d3;
+}
+/*  end of variables */
+/* browser reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-ul{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  }
-
-/* variables */
-  :root{
-    --breakio-color: linear-gradient(0deg, #0F172A, #0F172A),
-    linear-gradient(0deg, #86198F, #86198F);
-    --fuchsia: #86198F;
-    --blueGray: #0F172A;
-    --breakio-font-weight: 700;
-    --breakio-font-size: 32px;
-    --breakio-line-height: 35.2px; /* or 110% */
-
-    --body-copy-font-family: 'Roboto', sans-serif; 
-    /* link texts, h, p, (everything text)   */
-    --body-copy-font-style: normal;
-    --body-copy-text-align: center;
-
-    --call-to-action-font-weight: 500;
-    --call-to-action-font-size: 16px;
-    --call-to-actio-line-height: 24px;
-    --call-to-actio-letter-spacing: 0.5px;
-    --call-to-action-text-color: #0F172A;
-    --call-to-action-btn-text: #FFFFFF;
-    --call-to-action-btn-background: #C026D3;
-    --call-to-action-btn-border-radius:  18px;
-    --call-to-action-btn-border: 2px solid  #C026D3;
-    
-    
-    --headings: linear-gradient(90deg, #C026D3 0%, #701A75 100%);
-    --headings-font-weight: 800;
-    --headings-line-height: 110%;
-    --heading1-font-size: 72px;
-    --heading2-font-size: 56px;
-    --heading5-font-weight: 700;
-    --heading5-font-size: 32px;
-    --heading5-color: #0F172A;
-
-    --paragraphsColor: #475569;
-    --paragraphsColor2: #0F172A;
-    --paragrapsFontWeight: 400;
-    --paragrapsFontWeight2: 500;
-    --paragraps-line-height1: 160%;
-    --paragraps-line-height2: 180%;
-    --paragraps-line-height3: 140%;
-    --paragraphsFontSize1: 20px;
-    --paragraphsFontSize2: 24px;
-    --paragraphsFontSize3: 18px;
-    --paragraphsFontSize4: 16px;
-    --paragraphsFontSize5: 14px;
-
-    --inputField-font-weight: 400;
-    --inputField-color: #475569;
-    --inputField-font-size: 24px;
-    --inputField-line-height: 160%;
-
-  }
-  /* top-nav */
-  .top-nav{
-    display: flex;
-    justify-content: space-between; 
-    padding-left: 70px;
-    padding-right: 70px;
-  }
-  /* logo  */
-.home {
-  padding-top: 19.5px;
+body {
+  font-family: var(--ff-primary);
+  background: var(--clr-white);
+  text-align: center;
+}
+a {
   text-decoration: none;
+}
+ul li {
+  list-style-type: none;
+}
+.btn {
+  background: var(--fuchsia-light);
+  display: inline-block;
+  cursor: pointer;
+  border-radius: var(--call-to-action-btn-border-radius);
+}
+img {
+  width: 100%;
+  display: block;
+}
+/* =========
+Header
+============
+ */
+/* Navbar */
+.top-nav {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 2.5rem;
+  padding-left: 2.5rem;
+  height: 7rem;
+}
+/* logo  */
+.home {
+  padding-top: 1.21875rem;
   font-size: var(--breakio-font-size);
-  font-family: var(--body-copy-font-family);
-  font-weight: var(--breakio-font-weight);
+  font-weight: var(--seven-hundred);
   line-height: var(--breakio-line-height);
-  font-style: normal;
-  /* color: linear-gradient(0deg, #0F172A, #0F172A),
-  linear-gradient(0deg, #86198F, #86198F);
-   */
 }
-
-.home :hover{
-  /* I need a different color on hover */
+.home :hover {
   text-decoration: underline;
+  text-decoration-color: rgb(69, 69, 206);
 }
-.gray{
+.gray {
   color: var(--blueGray);
 }
-.fuchsia{
+.fuchsia {
   color: var(--fuchsia);
 }
+/* menu-icon */
+/* .menu-icon {
+  color: var(--fuchsia-light);
+  padding-top: 1.8125rem;
+} */
 
 /* navigation links */
-.links{
-  padding-top: 29px;
+.links {
+  padding-top: 1.8125rem;
 }
-.links a{
-  text-decoration: none;
+.links a {
   font-size: var(--call-to-action-font-size);
-  font-family: var(--body-copy-font-family);
-  font-weight: var(--call-to-action-font-weight);
-  font-style: normal;
-  line-height: var(--call-to-actio-line-height);
-  letter-spacing: var(--call-to-actio-letter-spacing);
+  font-weight: var(--five-hundred);
+  line-height: var(--call-to-action-line-height);
+  letter-spacing: var(--call-to-action-letter-spacing);
   color: var(--blueGray);
-  padding-left: 14px;
-  padding-right: 14px;
+  padding-right: 0.875rem;
+  padding-left: 0.875rem;
 }
-.links :hover{
-  /* I need a different color on hover. */
+.links :hover {
   text-decoration: underline;
+  text-decoration-color: rgb(115, 27, 197);
 }
-.links li{
+.links li {
   display: inline;
 }
 .links .nav-btn {
-  background-color: var(--call-to-action-btn-background);
-color: var(--call-to-action-btn-text);
-border-radius: var(--call-to-action-btn-border-radius);
-/* padding: var(--call-to-action-btn-padding); */
-padding-left: 23px;
-padding-right: 23px;
-padding-top: 8px;
-padding-bottom: 8px;
+  color: var(--clr-white);
+  padding: 0.6875rem 1.4375rem 0.6875rem 1.4375rem;
+  font-weight: var(--four-hundred);
+  font-size: 0.9375rem;
 }
-
-/* .links li{
-  justify-content: right;
-} */
-/* .links a:link{
-  color:#0F172A;
-} */
-
-  img {
-    max-width: 100%;
-  } 
-  /* Header */
-  /* nav bar*/
-
-  
+/* END OF TOP NAV------*/
+h1 {
+  font-size: 4.375rem;
+  background: var(--headings);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 4.97rem;
+  margin-bottom: 1.4375rem;
+}
+p {
+  text-align: center;
+  color: var(--blueGray-light);
+  font-size: 1.21875rem;
+  font-weight: var(--four-hundred);
+  line-height: 2.25rem;
+  margin-bottom: 1.4375rem;
+}
+/* hero-section -form */
+.form-input {
+  display: flex;
+}
+.input-name {
+  margin-left: 21.5625rem;
+}
+input {
+  font-size: 1.3125rem;
+  font-weight: var(--four-hundred);
+  line-height: 2.4rem;
+  color: var(--blueGray-light);
+  border: 1px solid #cbd5e1;
+  border-radius: 1.625rem;
+  letter-spacing: 0.125rem;
+  padding-top: 0.6875rem;
+  padding-right: 11.875rem;
+  padding-bottom: 0.6875rem;
+  padding-left: 1.3125rem;
+}
+/* hero-btn */
+.hero-btn {
+  margin-top: 1rem;
+  margin-left: 0.9375rem;
+}
+.hero-btn a {
+  color: var(--clr-white);
+  background-color: var(--fuchsia-light);
+  border-radius: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: var(--five-hundred);
+  line-height: 1.375rem;
+  letter-spacing: 0.0625rem;
+  padding-top: 0.75rem;
+  padding-right: 2.5rem;
+  padding-bottom: 0.75rem;
+  padding-left: 2.5rem;
+}
+.hero-btn a:hover {
+  text-decoration: underline;
+  text-decoration-color: rgb(115, 27, 197);
+}
+/* hero-image */
+.hero-img {
+  margin-top: 4.375rem;
+  margin-right: 2.5rem;
+  margin-bottom: 5rem;
+  margin-left: 2.5rem;
+}
+h2 {
+  font-size: 3.5rem;
+  background: var(--headings);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 3.85rem;
+  margin-bottom: 1.5rem;
+}
+p {
+  /* text-align: center; */
+  color: var(--blueGray-light);
+  font-size: 1.25rem;
+  font-weight: var(--four-hundred);
+  line-height: 2.25rem;
+}
+.productivity-btn a {
+  color: var(--clr-white);
+  background-color: var(--fuchsia-light);
+  border-radius: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: var(--five-hundred);
+  line-height: 1.375rem;
+  letter-spacing: 0.0625rem;
+  padding-top: 0.45rem;
+  padding-right: 2.5rem;
+  padding-bottom: 0.45rem;
+  padding-left: 2.5rem;
+}
+.productivity-btn a:hover {
+  text-decoration: underline;
+  text-decoration-color: rgb(115, 27, 197);
+}
+.pdtvt-img {
+  margin-top: 3.09375rem;
+  margin-right: 2.5rem;
+  margin-bottom: 3.09375rem;
+  margin-left: 2.5rem;
+}
+/* TESTIMONIAL */
+/* testimonial section-1 */
+.testimonial-slider {
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+}
+.testimonial-2 {
+  padding-bottom: 2rem;
+}
+/* TOOLS */
+.tools-rows {
+  padding-right: 5rem;
+  padding-left: 5rem;
+}
+.row {
+  margin-bottom: 2.3rem;
+}
+/*  QUESTIONS */
+.questions {
+  background-color: #f1f5f9;
+  /* margin-bottom: 3rem; */
+}
+.questions h2 {
+  padding-top: 2rem;
+}
+.questions p {
+  padding-bottom: 1rem;
+}
+.faq-items {
+  padding-right: 5rem;
+  padding-bottom: 2.5rem;
+  padding-left: 5rem;
+}
+/* FOOTER */

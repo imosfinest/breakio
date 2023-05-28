@@ -4,79 +4,316 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>breakio</title>
+    <title>Breakio || Home</title>
+    <!-- font-awesome -->
     <script
       src="https://kit.fontawesome.com/20caaf4113.js"
       crossorigin="anonymous"
     ></script>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,700&display=swap" rel="stylesheet">
+    <!-- google font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- custom css -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <!-- header -->
     <header>
-      <!-- top-nav -->
+      <!-- navbar ---->
       <nav class="top-nav">
         <a
           class="home"
+          id="active"
           href="https://www.figma.com/file/8likdmnM4AcYh9pA2RmSc6/WebbyPages-(Community)?node-id=1%3A10&t=IPgBzPycDXhaeelQ-1"
           target="_blank"
-          >
-          <span class="gray">break</span><span class="fuchsia">io</span>
-          </a
+          title="Visit WebbyPages"
         >
-        <!--top-nav links -->
+          <span class="gray">break</span><span class="fuchsia">io</span>
+        </a>
+
+        <!-- Menu -->
+        <!-- <span class="menu-icon" id="menu-icon">
+          <i class="fa-solid fa-bars"></i>
+        </span> -->
+
+        <!-- Navigation links (hidden by default) -->
         <ul class="links">
           <li><a href="explore.html">Explore</a></li>
           <li><a href="solutions.html">Solutions</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a href="log-in.html">Log In</a></li>
-          <li><a href="start-now.html" class="nav-btn">Start Now</a></li>
+          <li><a href="start-now.html" class="btn nav-btn">Start Now</a></li>
         </ul>
         <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
         <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa-regular fa-bars"></i>
-            </a> -->
+          <i class="fa-solid fa-bars"></i>
+        </a> -->
       </nav>
-      <!-- intro -->
-      <section class="intro-section">
-        <div class="intro-content">
+
+      <!-- hero-section ------------------------------------------------->
+      <section class="hero-section">
+        <div class="hero-content">
           <h1>It’s time to take a break</h1>
           <p>
             Build your meditation skills with an app that gives you all you
             need!
           </p>
-          <!-- input form -->
-          <div class="input">
-            <!-- name input -->
-            <div class="name">
-              <input type="text" name="name" placeholder="Enter your name" />
+          <!-- input form----------------------------------------------->
+          <div class="form-input">
+            <!-- name input ------------------------------------------>
+            <div class="input-name">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+              />
             </div>
-            <!-- submit button -->
-            <div class="btn">
-              <button class="form-btn">
-                <a class="form-btn-link" href="start-now.html">Start Now</a>
-              </button>
+            <!-- submit button ---------------------------------------->
+            <div class="hero-btn">
+              <a class="form-btn-link" href="start-now.html">Start Now</a>
             </div>
           </div>
         </div>
-        <!-- intro img -->
-        <div class="intro-img">
-          <img
-            src="images/intro-img.svg"
-            alt="intro-section-image"
-            class="intro-image"
-          />
+        <!-- hero-img ----------------------------------------------->
+        <div class="hero-img">
+          <img src="assets/images/intro-img.svg" alt="hero-section-image" />
         </div>
       </section>
+      <!-- END OF HERO SECTION -->
     </header>
-    <!-- end of header -->
+    <!--END OF HEADER -->
 
-    <!-- hero-section -->
-    <!-- testimonia section -->
-    <!-- section -->
-    <!-- section -->
+    <!-- PRODUCTIVITY SECTION -->
+    <section class="productivity">
+      <h2>Get better everyday</h2>
+      <p>
+        Et pulvinar nec interdum integer id urna molestie porta nullam. A, donec
+        ornare sed turpis pulvinar <br />
+        purus maecenas quam a. Erat porttitor pharetra sed in mauris elementum
+        sollicitudin.
+      </p>
+      <div class="btn productivity-btn">
+        <a class="productivity-btn-link" href="start-now.html">Start Now</a>
+      </div>
+      <div class="pdtvt-img">
+        <img src="assets/images/desktop-mockup.png" alt="#" />
+      </div>
+    </section>
+    <!--end of productivity section -->
+
+    <!-- testimonial section one -->
+    <section class="testimonial-1">
+      <div class="testimonial-1-content">
+        <h2>Stories from our users</h2>
+        <p>
+          Et pulvinar nec interdum integer id urna molestie porta nullam. A,
+          donec ornare sed turpis pulvinar <br />
+          purus maecenas quam a. Erat porttitor pharetra sed in mauris elementum
+          sollicitudin.
+        </p>
+      </div>
+      <div class="testimonial-slider">
+        <img src="assets/images/row-slider.png" alt="#" />
+      </div>
+    </section>
+    <!--end of testimonial section one -->
+
+    <!-- testimonial section two -->
+    <section class="testimonial-2">
+      <img src="assets/images/extra-testimony-card.png" alt="#" />
+    </section>
+    <!-- end of testimonial section two -->
+
+    <!-- Tools section -->
+    <section class="tools">
+      <div class="tools-content">
+        <h2>Your favourite tools</h2>
+        <p>
+          In risus nec molestie at in pulvinar tellus. At integer id condimentum
+          gravida nisi nisl. Sem vitae <br />
+          porttitor arcu congue sem erat et sit faucibus. Sollicitudin elit
+          gravida tellus mattis porttitor.
+        </p>
+      </div>
+      <div class="tools-rows">
+        <div class="row row-1">
+          <img src="assets/images/Row-1.png" alt="#" />
+        </div>
+        <div class="row row-2">
+          <img src="assets/images/Row-2.png" alt="#" />
+        </div>
+        <div class="row row-3">
+          <img src="assets/images/Row-3.png" alt="#" />
+        </div>
+      </div>
+    </section>
+    <!--End of tools section -->
+    <!-- Questions section -->
+    <section class="questions">
+      <h2>Frequently asked questions</h2>
+      <p>
+        Et pulvinar nec interdum integer id urna molestie porta nullam. A, donec
+        ornare sed turpis pulvinar <br />
+        purus maecenas quam a. Erat porttitor pharetra sed in mauris elementum
+        sollicitudin.
+      </p>
+      <div class="faq-items">
+        <div class="items item-1">
+          <img src="assets/faq/FAQ-item-1.png" alt="#" />
+        </div>
+        <div class="items item-2">
+          <img src="assets/faq/FAQ-item-2.png" alt="#" />
+        </div>
+        <div class="items item-3">
+          <img src="assets/faq/FAQ-item-3.png" alt="#" />
+        </div>
+        <div class="items item-4">
+          <img src="assets/faq/FAQ-item-4.png" alt="#" />
+        </div>
+        <div class="items item-5">
+          <img src="assets/faq/FAQ-item-5.png" alt="#" />
+        </div>
+      </div>
+    </section>
+    <!-- End of questions section -->
     <!-- footer -->
+    <footer class="footer">
+      <section class="columns">
+        <ul class="columns colunm-1">
+          <h5>Categories</h5>
+          <li>User Interface</li>
+          <li>User Experience</li>
+          <li>Digital Media</li>
+          <li>Lifestyle</li>
+          <li>Programming</li>
+          <li>Animation</li>
+        </ul>
+
+        <ul class="columns colunm-2">
+          <h5>Product</h5>
+          <li>Pricing</li>
+          <li>Overview</li>
+          <li>Browse</li>
+          <li>Accessibility</li>
+          <li>Five</li>
+          <li>Changelog</li>
+        </ul>
+        <ul class="columns colunm-3">
+          <h5>Solutions</h5>
+          <li>Brainstorming</li>
+          <li>Ideation</li>
+          <li>Wireframing</li>
+          <li>Research</li>
+          <li>Design</li>
+          <li>Concept</li>
+        </ul>
+        <ul class="columns colunm-4">
+          <h5>Resources</h5>
+          <li>Help Center</li>
+          <li>Blog</li>
+          <li>Tutorials</li>
+          <li>FAQs</li>
+          <li>Community</li>
+          <li>Events</li>
+        </ul>
+        <ul class="columns colunm-5">
+          <h5>Support</h5>
+          <li>Contact Us</li>
+          <li>Developers</li>
+          <li>Documentation</li>
+          <li>Inegrations</li>
+          <li>Reports</li>
+          <li>Webinar</li>
+        </ul>
+        <ul class="columns colunm-6">
+          <h5>Company</h5>
+          <li>About</li>
+          <li>Press</li>
+          <li>Events</li>
+          <li>Careers</li>
+          <li>Customers</li>
+          <li>Partners</li>
+        </ul>
+      </section>
+      <!-- footer-text -->
+      <div class="footer-text">
+        <span class="gray">break</span
+        ><span class="fuchsia">io</span>&#x0040;<span>2023 -</span>All rights
+        reserved
+      </div>
+
+      <!-- end of footer-text -->
+
+      <!-- social center -->
+
+      <div class="social-center">
+        <!-- social icons -->
+
+        <div class="social-icons">
+          <!-- youtube -->
+          <a href="#" class="social-icon">
+            <img
+              src="assets/social-icons/youtube.svg"
+              alt="#"
+              style="width: 19.96px; height: 13.97px"
+            />
+          </a>
+          <!--end of youtube -->
+          <!-- facebook -->
+
+          <a href="#" class="social-icon">
+            <img
+              src="assets/social-icons/facebook.svg"
+              alt="#"
+              style="width: 9.32px; height: 19.96px"
+            />
+          </a>
+
+          <!-- end of facebook -->
+
+          <!-- twitter -->
+
+          <a href="#" class="social-icon">
+            <img
+              src="assets/social-icons/twitter.svg"
+              alt="#"
+              style="width: 20px; height: 16px"
+            />
+          </a>
+
+          <!-- end of twitter -->
+
+          <!-- instagram -->
+
+          <a href="#" class="social-icon">
+            <img
+              src="assets/social-icons/instagram.svg"
+              alt="#"
+              style="width: 10.33px; height: 10.33px"
+            />
+          </a>
+          <!-- end of instagram -->
+
+          <!-- linkedin -->
+
+          <a href="#" class="social-icon">
+            <img
+              src="assets/social-icons/linkedin.svg"
+              alt="#"
+              style="width: 19.96px; height: 19.07px"
+            />
+          </a>
+
+          <!-- end of linkedin -->
+        </div>
+        <!-- end of social icons -->
+      </div>
+      <!-- end of social center -->
+    </footer>
+    <!--end of footer  -->
   </body>
 </html>
